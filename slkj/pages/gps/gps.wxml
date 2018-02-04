@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="track-bg">
+    <view class="track-input-block">
+      <icon type="search" size="15" color="purple" />
+      <input class="track-input" placeholder="请输入车牌号" bindinput="carNumberInput" />
+      <!-- <image src="/res/images/scan.png" mode="widthFix" class="i-scan" bindtap="scanNumber"></image> -->
+      <button style="color: white; background-color: #ff8719;" class="i-scan" bindtap="clickButton" form-type="submit">查询</button>
+    </view>
+  </view>
+  <view class="track-history">
+    <map id="map" latitude="{{map.lat}}" longitude="{{map.lng}}" markers="{{map.markers}}" style="width: 100%; height: 100%;"></map>
+  </view>
+</view>
