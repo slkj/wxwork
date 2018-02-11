@@ -9,6 +9,6 @@
     </view>
   </view>
   <view class="track-history">
-    <map id="map" latitude="{{map.lat}}" longitude="{{map.lng}}" markers="{{map.markers}}" style="width: 100%; height: 100%;"></map>
+    <map id="map" scale="{{scale}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" latitude="{{latitude}}" longitude="{{longitude}}" controls="{{controls}}" show-location bindregionchange="regionchange" style="width: 100%; height: 100%;"></map>
   </view>
 </view>
